@@ -1,0 +1,24 @@
+@use '../base'as *;
+@use '../utilities'as *;
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 4px;
+    height: 80px;
+    left: 6vw;
+    bottom: 9vh;
+    background-color: $base-2;
+    mix-blend-mode: difference;
+    animation: bouncing 2s ease-out infinite;
+
+    &::after {
+        @include pseudo($pos: absolute, $content: '', $bg: transparent, $width: 40px, $height: 40px);
+        bottom: 2px;
+        border-width: 0 4px 4px 0;
+        border-style: solid;
+        border-color: $base-2;
+        transform: rotate(45deg);
+    }
+}

@@ -1,0 +1,46 @@
+@use '../base' as *;
+@use '../utilities' as *;
+
+.header {
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 5vw;
+    padding: 0 $spacing-w;
+    text-transform: lowercase;
+    color: $base-2;
+    mix-blend-mode: difference;
+
+    ul {
+        display: flex;
+        gap: $gap;
+        @include Size-LH($tx-xs, 200%);
+
+        li {
+            position: relative;
+
+            a {
+                &::before {
+                    @include pseudo($display: block, $pos: absolute, $content: '', $bg: $base-2, $width: 0, $height: 2px);
+                    top: 50%;
+                    transition: all .5s ease;
+                }
+
+                &:hover::before {
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+}
+
+.logo {
+    @include title(400);
+    @include Size-LH($tx-md, 200%);
+    color: $base-2;
+    mix-blend-mode: difference;
+}

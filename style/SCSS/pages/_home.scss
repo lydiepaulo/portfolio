@@ -1,0 +1,69 @@
+@use "../base"as *;
+@use "../components"as *;
+@use "../utilities"as *;
+
+//MAIN
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: $spacing-w;
+
+    &__content {
+        gap: calc($gap * 2);
+        max-height: 30.5vw;
+
+        @include media-min($md) {
+            @include flexJust(space-between);
+        }
+
+        @include media-max($md) {
+            @include flexDirAlign(column, center);
+            text-align: center;
+        }
+
+        &--picture {
+            display: grid;
+            transform: translateY(calc($spacing-w - 1vw));
+            z-index: 1;
+
+            &:hover::before,
+            &:hover img {
+                transform: rotate(0deg);
+            }
+
+            &::before {
+                @include pseudo($pos: initial, $content: '', $bg: $base-1, $width: 31vw, $height: 39vw);
+                grid-row: 1;
+                grid-column: 1;
+                transform: rotate(2deg);
+                transition: transform .5s ease;
+            }
+
+            img {
+                grid-row: 1;
+                grid-column: 1;
+                z-index: 1;
+                width: 31vw;
+                height: 39vw;
+                object-fit: cover;
+                transform: rotate(-2deg);
+                transition: transform .5s ease;
+            }
+        }
+
+        &--text {
+            display: flex;
+            align-items: flex-end;
+            margin-left: $spacing-w;
+            opacity: 0;
+            animation: fromInvisible 2s 1.2s forwards;
+
+            p {
+                width: 35vw;
+            }
+        }
+    }
+}

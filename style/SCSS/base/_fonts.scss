@@ -1,0 +1,48 @@
+@use 'reset'as *;
+@use 'typography'as *;
+@use '../utilities'as *;
+
+.tx-xxl {
+  z-index: 2;
+
+  span {
+    @include title(400);
+
+    &:first-child {
+      display: block;
+      @include Size-LH($tx-xxl, 160%);
+      text-transform: uppercase;
+      opacity: 0;
+      animation: fromInvisible 1s .5s forwards;
+    }
+
+    &:last-child {
+      display: inline-grid;
+      grid-template-rows: 1px 1fr;
+      @include Size-LH($tx-xxl, 67%);
+      height: 8.2vw;
+      color: $base-2;
+
+      &::after {
+        @include pseudo($z-index: -1, $bg: $base-1, $height: 8.2vw);
+        margin-bottom: -8.2vw;
+        transform: scaleX(0);
+        transform-origin: left;
+        animation: from0to1 .5s 1s forwards;
+      }
+    }
+  }
+}
+
+.tx-xl {
+  z-index: 2;
+  @include title(400);
+  @include Size-LH($tx-xl, 160%);
+}
+
+.tx-md {
+  z-index: 2;
+  @include text(400);
+  @include Size-LH($tx-md, $tx-md);
+  margin-bottom: $gap;
+}

@@ -1,0 +1,42 @@
+@use '../base'as *;
+@use '../utilities'as *;
+
+
+html, .body {
+    background: $base-2;
+    scroll-behavior: smooth;
+}
+
+.body {
+    @include text(400);
+    @include Size-LH($tx-xs, 160%);
+    color: $base-1;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 1fr;
+
+    &::before {
+        @include pseudo($pos: fixed, $bg: $base-1, $width: 100vw, $height: 2px);
+        top: 17.5vw;
+    }
+
+    &::after {
+        @include pseudo($pos: fixed, $bg: $base-1, $width: 2px, $height: 100vh);
+        right: 24vw;
+    }
+}
+
+.main {
+    @include media-min($md) {
+        section {
+            width: 100vw;
+            height: 100vh;
+            padding: $spacing-w;
+        }
+    }
+
+    section:nth-child(odd) {
+        background-color: $base-1;
+        color: $base-2;
+    }  
+}

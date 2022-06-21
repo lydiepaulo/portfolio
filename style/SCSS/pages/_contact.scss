@@ -1,0 +1,13 @@
+@use "../base"as *;
+@use "../components" as *;
+@use "../utilities" as *;
+
+.contact {
+    &__content--links {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: $base-2;
+        padding: $spacing-w;
+    }
+}
