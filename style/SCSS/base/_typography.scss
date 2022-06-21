@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;900&display=swap");
 @font-face {
     font-family: 'actu';
-    src: url('Actu-font/actu.woff2') format('woff2'),
-         url('Actu-font/actu.woff') format('woff');
+    src: url('actu.woff2') format('woff2'),
+         url('actu.woff') format('woff');
 }
 
 //typo
-$title: "actu", serif;
+$title: "actu";
 $body: "Mulish", sans-serif;
 
 //text sizes
