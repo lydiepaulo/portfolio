@@ -16,12 +16,12 @@ html, .body {
     grid-template-rows: auto 1fr;
 
     &::before {
-        @include pseudo($pos: fixed, $bg: $base-1, $width: 100vw, $height: 2px);
+        @include pseudo($pos: fixed, $bg: $base-1, $width: 100vw, $height: 1px);
         top: 17.5vw;
     }
 
     &::after {
-        @include pseudo($pos: fixed, $bg: $base-1, $width: 2px, $height: 100vh);
+        @include pseudo($pos: fixed, $bg: $base-1, $width: 1px, $height: 100vh);
         right: 24vw;
     }
 }

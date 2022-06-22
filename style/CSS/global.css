@@ -140,8 +140,8 @@ button {
 }
 .tx-xxl span:first-child {
   display: block;
-  font-size: 9vw;
-  line-height: 160%;
+  font-size: 7vw;
+  line-height: 220%;
   text-transform: uppercase;
   opacity: 0;
   -webkit-animation: fromInvisible 1s 0.5s forwards;
@@ -150,9 +150,8 @@ button {
 .tx-xxl span:last-child {
   display: inline-grid;
   grid-template-rows: 1px 1fr;
-  font-size: 9vw;
-  line-height: 67%;
-  height: 8.2vw;
+  font-size: 7vw;
+  line-height: 80%;
   color: #ffffff;
 }
 .tx-xxl span:last-child::after {
@@ -162,8 +161,8 @@ button {
   z-index: -1;
   background-color: #111111;
   width: 100%;
-  height: 8.2vw;
-  margin-bottom: -8.2vw;
+  height: 6.7vw;
+  margin-bottom: -6.7vw;
   transform: scaleX(0);
   transform-origin: left;
   -webkit-animation: from0to1 0.5s 1s forwards;
@@ -180,10 +179,10 @@ button {
 
 .tx-md {
   z-index: 2;
-  font-family: "Mulish", sans-serif;
+  font-family: "inter", sans-serif;
   font-weight: 400;
-  font-size: 2vw;
-  line-height: 2vw;
+  font-size: 1.8vw;
+  line-height: 1.8vw;
   margin-bottom: 1vw;
 }
 
@@ -208,7 +207,7 @@ button {
   background-color: transparent;
   width: 40px;
   height: 40px;
-  bottom: 2px;
+  bottom: 1px;
   border-width: 0 4px 4px 0;
   border-style: solid;
   border-color: #ffffff;
@@ -231,7 +230,7 @@ button {
 .header ul {
   display: flex;
   gap: 1vw;
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   line-height: 200%;
 }
 .header ul li {
@@ -244,7 +243,7 @@ button {
   z-index: 0;
   background-color: #ffffff;
   width: 0;
-  height: 2px;
+  height: 1px;
   top: 50%;
   transition: all 0.5s ease;
 }
@@ -255,7 +254,7 @@ button {
 .logo {
   font-family: "acturegular";
   font-weight: 400;
-  font-size: 2vw;
+  font-size: 1.8vw;
   line-height: 200%;
   color: #ffffff;
   mix-blend-mode: difference;
@@ -267,9 +266,9 @@ html, .body {
 }
 
 .body {
-  font-family: "Mulish", sans-serif;
+  font-family: "inter", sans-serif;
   font-weight: 400;
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   line-height: 160%;
   color: #111111;
   position: relative;
@@ -283,7 +282,7 @@ html, .body {
   z-index: 0;
   background-color: #111111;
   width: 100vw;
-  height: 2px;
+  height: 1px;
   top: 17.5vw;
 }
 .body::after {
@@ -292,7 +291,7 @@ html, .body {
   position: fixed;
   z-index: 0;
   background-color: #111111;
-  width: 2px;
+  width: 1px;
   height: 100vh;
   right: 24vw;
 }
@@ -348,8 +347,8 @@ html, .body {
   position: initial;
   z-index: 0;
   background-color: #111111;
-  width: 31vw;
-  height: 39vw;
+  width: 26vw;
+  height: 33vw;
   grid-row: 1;
   grid-column: 1;
   transform: rotate(2deg);
@@ -359,8 +358,8 @@ html, .body {
   grid-row: 1;
   grid-column: 1;
   z-index: 1;
-  width: 31vw;
-  height: 39vw;
+  width: 26vw;
+  height: 33vw;
   -o-object-fit: cover;
      object-fit: cover;
   transform: rotate(-2deg);
@@ -413,7 +412,7 @@ html, .body {
   z-index: 0;
   background-color: #ffffff;
   width: 12vw;
-  height: 2px;
+  height: 1px;
   margin-right: -12vw;
   transform: scaleX(0);
   transform-origin: right;

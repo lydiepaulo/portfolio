@@ -10,7 +10,7 @@
 
     &:first-child {
       display: block;
-      @include Size-LH($tx-xxl, 160%);
+      @include Size-LH($tx-xxl, 220%);
       text-transform: uppercase;
       opacity: 0;
       animation: fromInvisible 1s .5s forwards;
@@ -19,13 +19,12 @@
     &:last-child {
       display: inline-grid;
       grid-template-rows: 1px 1fr;
-      @include Size-LH($tx-xxl, 67%);
-      height: 8.2vw;
+      @include Size-LH($tx-xxl, 80%);
       color: $base-2;
 
       &::after {
-        @include pseudo($z-index: -1, $bg: $base-1, $height: 8.2vw);
-        margin-bottom: -8.2vw;
+        @include pseudo($z-index: -1, $bg: $base-1, $height: 6.7vw);
+        margin-bottom: -6.7vw;
         transform: scaleX(0);
         transform-origin: left;
         animation: from0to1 .5s 1s forwards;

@@ -35,7 +35,7 @@
             }
 
             &::before {
-                @include pseudo($pos: initial, $content: '', $bg: $base-1, $width: 31vw, $height: 39vw);
+                @include pseudo($pos: initial, $content: '', $bg: $base-1, $width: 26vw, $height: 33vw);
                 grid-row: 1;
                 grid-column: 1;
                 transform: rotate(2deg);
@@ -46,8 +46,8 @@
                 grid-row: 1;
                 grid-column: 1;
                 z-index: 1;
-                width: 31vw;
-                height: 39vw;
+                width: 26vw;
+                height: 33vw;
                 object-fit: cover;
                 transform: rotate(-2deg);
                 transition: transform .5s ease;

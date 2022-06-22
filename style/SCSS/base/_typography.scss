@@ -3,13 +3,13 @@
 
 //typo
 $title: "acturegular";
-$body: "Mulish", sans-serif;
+$body: "inter", sans-serif;
 
 //text sizes
-$tx-xxl: 9vw;
+$tx-xxl: 7vw;
 $tx-xl: 6vw;
-$tx-md: 2vw;
-$tx-xs: 1.3vw;
+$tx-md: 1.8vw;
+$tx-xs: 1.2vw;
 
 @mixin title($weight) {
     font-family: $title;

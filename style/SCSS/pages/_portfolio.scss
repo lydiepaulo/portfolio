@@ -32,7 +32,7 @@
             transform: translate(-$gap,-$spacing-w);
             
             &::after {
-                @include pseudo($bg: $base-2, $width: 12vw, $height: 2px);
+                @include pseudo($bg: $base-2, $width: 12vw, $height: 1px);
                 margin-right: -12vw;
                 transform: scaleX(0);
                 transform-origin: right;
